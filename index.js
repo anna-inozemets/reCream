@@ -4,26 +4,17 @@ new Swiper('.useful__content-slider', {
     enabled: true,
     onlyInViewport: true,
   },
-  slidesPerView: 4,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  spaceBetween: 0,
   breakpoints: {
-    1024: {
-      spaceBetween: 0,
+    1400: {
+      slidesPerView: 4,
     },
-    768: {
-      spaceBetween: 60,
-    },
-    500: {
-      spaceBetween: 40,
+    1200: {
       slidesPerView: 3,
-    },
-    320: {
-      spaceBetween: 15,
-      slidesPerView: 2,
     }
-    
   }
 });

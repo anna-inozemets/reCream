@@ -357,7 +357,6 @@ a.toContent:hover svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   position: relative;
 }
 
@@ -375,8 +374,8 @@ a.toContent:hover svg {
   z-index: -1;
 }
 
-.about__content img {
-  flex-basis: 35%;
+.about__content > img {
+  width: 45%;
 }
 
 .about__title {
@@ -564,6 +563,7 @@ p.with--background {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
 }
 
 .section-advatages--main h2 {
@@ -672,32 +672,36 @@ p.with--background {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 45px;
   width: 95%;
   margin: 0 auto;
 }
 
 .chafing__about-title {
+  position: relative;
   background-image: url('./images/arrow-decorator-title.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 500px;
   height: 490px;
   position: relative;
   top: -150px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  flex-basis: calc(50% - 45px);
 }
 .chafing__about-title h3 {
   font-size: 29px;
-  margin-bottom: 105px;
-  margin-right: 50px;
+  position: absolute;
+  bottom: 20%;
+  right: 23%;
 }
 
 .chafing__img {
   position: relative;
   margin-top: 80px;
+  flex-basis: calc(50% - 45px);
 }
 .chafing__img h3 {
   width: max-content;
@@ -1028,3 +1032,339 @@ footer p:last-of-type {
 }
 /*#endregion footer*/
 
+
+@media screen and (min-width: 1921px) {
+  .useful__slider-button {
+    justify-content: center !important;
+    width: 90px !important;
+    height: 90px !important;
+  }
+  .useful__slider-button.swiper-button-next {
+    right: 5px;
+  }
+  .useful__slider-button.swiper-button-prev {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .logo {
+    max-width: 340px;
+  }
+  .logo img {
+    max-width: 285px;
+  }
+  .logo p {
+    font-size: 25px;
+  }
+
+  .header__nav-list {
+    gap: 20px;
+  }
+  .header__nav-sublist {
+    gap: 10px;
+  }
+  .header__nav-sublist li a img {
+    width: 30px;
+  }
+
+  .greeting__content--main {
+    padding-bottom: 15px;
+  }
+
+  .greeting__content--main-links a.buy::before {
+    border: 170px solid transparent;
+    border-right: 100px solid var(--color-white);
+  }
+  .greeting__content--main-links a.buy {
+    padding-right: 25px;
+  }
+  .greeting__content--main-links a.buy strong {
+    display: none;
+  }
+
+  .greeting__content--main__description img {
+    width: 750px;
+  }
+  .greeting__content--main__description img:last-child {
+    width: 630px;
+  }
+
+  .about__content-text {
+    margin-right: 0;
+  }
+  .section-about--main::before {
+    top: 21px;
+  }
+
+  .chafing__about {
+    gap: 25px;
+  }
+  .chafing__img,
+  .chafing__about-title {
+    flex-basis: calc(50% - 25px);
+  }
+  .chafing__about-title h3 {
+    right: 18%;
+  }
+  .chafing__img h3 {
+    top: 15px;
+  }
+
+  .cream__content {
+    gap: 30px;
+  }
+  .cream__content-text {
+    padding: 50px 60px;
+  }
+
+  .section--useful--main::before,
+  .section--useful--main::after {
+    width: 290px;
+    height: 290px;
+  }
+
+  .buy__card {
+    padding: 20px 40px;
+    min-height: 320px;
+  }
+  .buy__card img {
+    height: 60px;
+  }
+
+  .footer__logos {
+    gap: 35px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .logo {
+    max-width: 260px;
+  }
+  .logo p {
+    font-size: 17px;
+  }
+
+  .header__nav-list {
+    gap: 5px;
+  }
+
+  .greeting__content--main {
+    padding-bottom: 0;
+  }
+  .greeting__content--main__description {
+    top: 12px;
+  }
+
+  .section-about--main::before,
+  .section-about--main::after {
+    height: 180px;
+    width: 180px;
+  }
+  .section-about--main::before {
+    top: 47px;
+  }
+
+  .about__title {
+    font-size: 45px;
+  }
+  .about__title img {
+    height: 40px;
+  }
+  .about__content-text p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 37px;
+    margin-bottom: 25px;
+  }
+  .about__content > img {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  p.with--background {
+    font-size: 25px;
+  }
+
+  .applying__tab-cards {
+    gap: 25px;
+  }
+
+  .applying__tab-card-description {
+    height: 310px;
+    width: 310px
+  }
+  .applying__tab-card-decoration {
+    height: 110px;
+    width: 110px;
+    padding: 25px;
+  }
+  .applying__tab-button {
+    font-size: 25px;
+    padding-left: 22px;
+    padding-bottom: 20px;
+  }
+
+  .advantages__content-row--1,
+  .advantages__content-row--3 {
+    gap: 25px;
+  }
+
+  .advantages__content-row--2 img {
+    height: 420px;
+  }
+
+  .advantages__content-text p {
+    padding: 25px;
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
+  .advantages__content::after {
+    top: -210px;
+    width: 710px;
+    height: 710px;
+    transform: translateX(52%);
+  }
+
+  .section-advatages--main::after {
+    top: -615px;
+  }
+
+  .section-chafing--main {
+    margin-bottom: 30px;
+  }
+
+  .chafing__text {
+    padding: 35px 65px;
+  }
+  .chafing__img {
+    flex-basis: calc(65% - 25px);
+    margin-top: 45px;
+  }
+  
+  .chafing__about-title {
+    top: -180px;
+    flex-basis: calc(35% - 25px);
+  }
+
+  .chafing__about-title h3 {
+    max-width: 120px;
+    text-align: center;
+    font-size: 25px;
+    bottom: 27%;
+    right: 23%;
+  }
+
+  .cream__content-row {
+    flex-basis: calc(50% - 30px);
+  }
+  .cream__content-row img {
+    width: 70%;
+  }
+
+  .cream__content-text {
+    padding: 30px 40px;
+  }
+
+  .section--useful--main::before,
+  .section--useful--main::after {
+    width: 210px;
+    height: 210px;
+  }
+
+  .section--useful--main::before {
+    top: -40px;
+  }
+
+  .section--useful--main::after {
+    bottom: -75px;
+  }
+
+  .useful__content-slider-card {
+    max-width: 340px;
+  }
+
+  .useful__slider-button {
+    padding: 7px;
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+  .buy__cards {
+    gap: 45px;
+  }
+
+  .buy__card {
+    flex-basis: calc(33.33% - 45px);
+  }
+
+  .section--buy {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .header__wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header__nav-list li a {
+    padding: 10px;
+  }
+
+  .header__nav-sublist {
+    align-items: flex-start;
+  }
+
+  .header__nav-sublist li a {
+    max-width: 90px;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 215px;
+  }
+
+  .logo p {
+    font-size: 15px;
+  }
+
+  .greeting__content {
+    min-height: calc(100vh - 148px);
+    max-height: calc(100vh - 148px);
+  }
+
+  .greeting__content--main__description {
+    top: -35px;
+  }
+
+  a.toContent {
+    position: relative;
+    top: -50px;
+    left: -50px;
+  }
+
+  .greeting__content--main__description::before {
+    top: -15px;
+  }
+}
