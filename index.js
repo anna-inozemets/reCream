@@ -13,8 +13,19 @@ new Swiper('.useful__content-slider', {
     1400: {
       slidesPerView: 4,
     },
-    1200: {
+    1020: {
       slidesPerView: 3,
-    }
+    },
+    768: {
+      slidesPerView: 2,
+    },
   }
 });
+
+const burgerBtn = document.querySelector('.burger-button');
+const mobileMenu = document.querySelector('.header-mobile-nav');
+
+burgerBtn.addEventListener('click', function() {
+  burgerBtn.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+})
