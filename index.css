@@ -171,6 +171,10 @@ header {
   font-weight: 700;
   font-size: 14px;
   color: var(--color-accent-violet);
+  transition: all 0.4s;
+}
+.header__nav-list li a:hover {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4), -1px -1px 2px rgba(255, 255, 255, 0.5);
 }
 .header__nav-list li a.active {
   position: relative;
@@ -274,6 +278,10 @@ a.toContent:hover svg {
   top: 50%;
   bottom: 50%;
   text-align: center;
+  transition: all 0.4s;
+}
+.greeting__content--main-links a.buy:hover {
+  transform: scale(1.1);
 }
 .greeting__content--main-links a.buy img {
   min-height: 42px;
@@ -411,16 +419,26 @@ a.toContent:hover svg {
   border-radius: 45px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.4s;
 }
 
 .about__links a:first-child {
   background: linear-gradient(90deg, #EFF1F4 1.08%, #C0C2CA 100%), var(--color-accent-blue);
   color: var(--color-accent-blue);
 }
+.about__links a:first-child:hover {
+  border-color: var(--color-accent-blue);
+}
 
 .about__links a:last-child {
   background-color: var(--color-accent-blue);
   color: var(--color-white);
+}
+.about__links a:last-child:hover {
+  border-color: var(--color-accent-blue);
+  color: var(--color-accent-blue);
+  background-color: var(--color-white);
 }
 /*#endregion about*/
 
@@ -888,8 +906,15 @@ a.toContent--small svg {
   margin: 0 auto;
   padding: 20px 40px;
   border-radius: 45px;
-  background: linear-gradient(90deg, #EFF1F4 1.08%, #C0C2CA 100%), #3EBDAC;
+  background: linear-gradient(90deg, #EFF1F4 0%, #C0C2CA 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+
+.useful__content > a:hover {
+  border-color: var(--color-accent-violet);
+  box-shadow: 4px 4px 4px rgba(104, 48, 101, 0.5);
 }
 /*#endregion usefulInfo*/
 
@@ -987,9 +1012,15 @@ a.toContent--small svg {
 .connect__content button {
   padding: 20px 70px;
   font-size: 19px;
-  background: linear-gradient(90deg, #EFF1F4 1.08%, #C0C2CA 100%), #3EBDAC;
+  background: linear-gradient(90deg, #EFF1F4 0%, #C0C2CA 100%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 45px;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+}
+.connect__content button:hover {
+  border: 1px solid var(--color-accent-blue);
+  box-shadow: 4px 4px 10px rgba(62, 189, 172, 0.5);
 }
 /*#endregion conect*/
 
