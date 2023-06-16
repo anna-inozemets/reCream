@@ -73,6 +73,7 @@ img {
 /*#endregion animations*/
 
 /*#region generalStyles*/
+html,
 body {
   overflow-x: hidden;
 }
@@ -83,7 +84,7 @@ body {
   color: var(--color-black);
   scroll-behavior: smooth;
 }
-
+html.no-scroll,
 body.no-scroll {
   overflow-y: hidden;
 }
@@ -182,7 +183,7 @@ header {
 .header__nav-list li a.active::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -234,8 +235,8 @@ header {
   height: 100vh;
 }
 .greeting__content {
-  min-height: calc(100vh - 236px);
-  max-height: calc(100vh - 236px);
+  min-height: calc(100vh - 231px);
+  max-height: calc(100vh - 231px);
 }
 
 .greeting__content--main {
@@ -372,6 +373,8 @@ a.toContent:hover svg {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
 .about__content-overlay {
@@ -389,7 +392,7 @@ a.toContent:hover svg {
 }
 
 .about__content > img {
-  width: 45%;
+  flex-basis: calc(45% - 25px);
 }
 
 .about__title {
@@ -399,6 +402,7 @@ a.toContent:hover svg {
 .about__content-text {
   margin-top: 8%;
   margin-right: 55px;
+  flex-basis: calc(50% - 25px);
 }
 
 .about__content-text p {
@@ -1180,6 +1184,149 @@ footer p:last-of-type {
 }
 /*#endregion modal*/
 
+
+/*#region aboutPage*/
+.greeting__content--other-links a.buy::before {
+  top: -210%;
+  transform: translateY(0);
+  border: 140px solid transparent;
+  border-right: 145px solid var(--color-white);
+}
+.greeting__content--other-links a.buy {
+  padding-right: 12px;
+  padding-top: 35px;
+  top: 60%;
+}
+.greeting__content--about__description img {
+  margin-left: auto;
+  position: relative;
+  max-height: 70vh;
+}
+.greeting__content--about__description {
+  position: relative;
+}
+.greeting__content--about__description::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-52%);
+  right: -245px;
+  display: block;
+  width: 80vh;
+  height: 80vh;
+  border-radius: 50%;
+  background-color: var(--color-accent-blue);
+  z-index: -2;
+}
+
+.about__title--about {
+  text-align: left;
+}
+.about__content-text--about {
+  margin-right: 0;
+}
+
+.about__why {
+  display: flex;
+  align-items: flex-end;
+  gap: 45px;
+}
+.about__why-reasons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.how__content-img-wrapper {
+  position: relative;
+}
+.how__content-img-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(270deg, #FFFFFF 0%, rgba(217, 217, 217, 0) 46%);
+}
+
+.how__content {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.how__content-img-wrapper,
+.how__content-list {
+  flex-basis: calc(50% - 35px);
+}
+.how__content-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.how__content-list li {
+  background-image: url('./images/violet__arrow.svg');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  min-height: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-white);
+  position: relative;
+}
+.how__content-list li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  display: block;
+  height: 40px;
+  width: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.how__content-list li:first-child:before {
+  background-image: url('./images/1.svg');
+}
+.how__content-list li:nth-child(2):before {
+  background-image: url('./images/2.svg');
+}
+.how__content-list li:nth-child(3):before {
+  background-image: url('./images/3.svg');
+}
+.how__content-list li:nth-child(4)::before {
+  background-image: url('./images/4.svg');
+}
+.how__content-list li p {
+  max-width: 70%;
+  padding: 35px 100px;
+  margin-left: 100px;
+}
+
+.section-test--about {
+  background-color: var(--color-accent-blue);
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+.test__text {
+  padding: 45px 65px;
+  background: var(--color-white);
+  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto 110px;
+  font-size: 25px;
+}
+
+/*#ebdregion aboutPage*/
 
 @media screen and (min-width: 1921px) {
   .useful__slider-button {

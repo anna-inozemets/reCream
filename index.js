@@ -53,6 +53,7 @@ const modalContent = document.querySelector('.modal');
 function toggleActiveModal() {
   modalContent.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
+  document.documentElement.classList.toggle('no-scroll')
 }
 
 openModal.addEventListener('click', function() {
