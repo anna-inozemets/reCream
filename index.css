@@ -1508,8 +1508,101 @@ footer p:last-of-type {
   position: relative;
   top: 5px;
 }
-
 /*#endregion aboutPage*/
+
+/*#region chafingPage*/
+.section-about--chafing {
+  padding-top: 135px;
+}
+.chafing__content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1095px;
+  height: 1095px;
+  margin: 50px auto 240px;
+  border-radius: 50%;
+  background-color: var(--color-accent-blue);
+  padding: 50px 140px;
+  text-align: center;
+  position: relative;
+}
+.chafing__content-text::after {
+  content: '';
+  position: absolute;
+  bottom: -200px;
+  display: block;
+  height: 290px;
+  width: 200px;
+  background-image: url('./images/chafing__decorator-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.chafing__content-text p {
+  font-size: 22px;
+  color: var(--color-white);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.chafing__content-text p:first-child {
+  font-size: 33px;
+}
+.chafing__content-text p:nth-child(3) {
+  font-size: 24px;
+}
+.chafing__content-text p:last-child {
+  margin-bottom: 0;
+}
+.chafing__content-text ul {
+  font-size: 22px;
+  color: var(--color-white);
+  list-style: disc;
+  text-align: left;
+  padding-left: 35px;
+  margin-bottom: 25px;
+}
+.section-know--chafing h2 strong {
+  display: block;
+  text-align: center;
+}
+.section-know--chafing p {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+.section-know--chafing p:last-child {
+  max-width: 1350px;
+  margin-bottom: 240px;
+  text-align: left;
+  position: relative;
+}
+.section-know--chafing p:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: -240px;
+  right: 50%;
+  transform: translateX(50%);
+  display: block;
+  height: 290px;
+  width: 200px;
+  background-image: url('./images/chafing__decorator-arrow.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+.section-know--chafing p:last-child strong {
+  display: block;
+}
+.section-know--chafing p:last-child strong:not(:last-child) {
+  margin-bottom: 20px;
+}
+/*#endregion chafingPage*/
+
 
 @media screen and (min-width: 1921px) {
   .useful__slider-button {
