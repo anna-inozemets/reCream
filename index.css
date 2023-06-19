@@ -794,6 +794,7 @@ p.with--background {
 /*#region usefulInfo*/
 .section--useful--main {
   position: relative;
+  padding-top: 100px;
 }
 .section--useful--main::before,
 .section--useful--main::after {
@@ -1238,6 +1239,102 @@ footer p:last-of-type {
   gap: 55px;
 }
 
+.who__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.who__content-item {
+  flex-basis: 33.33%;
+}
+.who__content-text {
+  background-color: var(--color-white);
+  box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: max-content;
+  padding: 40px;
+  position: relative;
+  min-height: 280px;
+}
+.who__content-text p:first-child {
+  margin-bottom: 20px;
+}
+.who__content-photo {
+  position: relative;
+  z-index: -1;
+}
+.who__content-text::before {
+  box-sizing: border-box;
+  position: absolute;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+  width: 65px;
+  padding-right: 5px;
+  padding-top: 7px;
+  border-radius: 50%;
+  background-color: var(--color-accent-violet);
+}
+.who__content-text:first-child::before,
+.who__content-text:nth-child(4)::before {
+  right: -35px;
+}
+.who__content-text:last-child::before,
+.who__content-text:nth-child(3)::before {
+  left: -35px;
+}
+.who__content-text:first-child::before {
+  content: url('./images/1.svg');
+}
+.who__content-text:nth-child(4)::before {
+  content: url('./images/2.svg');
+}
+.who__content-text:nth-child(3)::before {
+  content: url('./images/3.svg');
+}
+.who__content-text:last-child::before {
+  content: url('./images/4.svg');
+}
+
+.who__content-text::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 50%;
+  width: 60%;
+  background-image: url('./images/cream-decorator-arrow.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.who__content-text:first-child::after,
+.who__content-text:nth-child(3)::after {
+  bottom: -40%;
+}
+.who__content-text:first-child::after {
+  transform: scaleY(-1) translateX(50%);
+  right: 40%;
+}
+.who__content-text:nth-child(3)::after {
+  transform: scaleY(-1) scaleX(-1) translateX(50%);
+  left: 40%;
+}
+.who__content-text:nth-child(4)::after,
+.who__content-text:last-child::after {
+  background-image: url('./images/who-arrow-decorator.png');
+  top: 20%;
+}
+.who__content-text:nth-child(4)::after {
+  right: -38%;
+}
+.who__content-text:last-child::after {
+  left: -38%;
+  transform: scaleX(-1);
+}
+
 .how__content-img-wrapper {
   position: relative;
 }
@@ -1321,12 +1418,87 @@ footer p:last-of-type {
   background: var(--color-white);
   box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto 110px;
   font-size: 25px;
+  line-height: 30px;
+  text-align: justify;
+}
+.test__text a {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin-left: 3px;
+}
+.test__text a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-21%) translateY(-5%);
+  display: block;
+  height: 150%;
+  width: 180%;
+  background-image: url('./images/header-arrow.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.test__list {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 190px;
+  flex-wrap: wrap;
+}
+.test__list-item {
+  flex-basis: calc(33.33% - 190px);
+}
+.test__list-item-photo {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1;
+}
+.test__list-item-text {
+  position: relative;
+  top: -20%;
+  height: 775px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FFFFFF 30%, rgba(255, 255, 255, 0) 100%);;
+}
+.test__list-item-text p {
+  text-align: center;
+}
+.test__list-item-text p:first-child {
+  font-size: 125px;
+  margin-bottom: 30px;
+}
+.test__list-item-text p:last-child {
+  font-size: 27px;
+}
+.container--test > p {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 31px;
+  text-align: center;
+}
+.container--test > p span img {
+  display: inline-block;
+  position: relative;
+  top: 5px;
 }
 
-/*#ebdregion aboutPage*/
+/*#endregion aboutPage*/
 
 @media screen and (min-width: 1921px) {
   .useful__slider-button {
