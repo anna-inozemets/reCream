@@ -1208,6 +1208,17 @@ footer p:last-of-type {
   display: block;
   z-index: -1;
 }
+.greeting__content--other-links--blue.greeting__content--main-links.greeting__content--other-links a.buy.buy--other-pages::before {
+  border-right: 145px solid var(--color-accent-blue);
+}
+.greeting__content--other-links--blue.greeting__content--main-links.greeting__content--other-links a.buy.buy--other-pages {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+}
+.greeting__content--other-links--blue.greeting__content--main-links.greeting__content--other-links a.buy.buy--other-pages strong{
+  color: var(--color-white);
+}
 
 .greeting__content--about__description img {
   margin-left: auto;
