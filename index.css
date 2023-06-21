@@ -2411,9 +2411,28 @@ footer p:last-of-type {
     left: 25px;
   }
 
+  .section-articleFirst__content-wrapper {
+    width: 85%;
+  }
+  .section-articleFirst__content p,
+  .section-articleFirst__content ul {
+    font-size: 22px;
+  }
+  .articleFirst__text {
+    width: 75%;
+  }
+  .articleFirst__photo {
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    left: -180px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 38px;
+  }
   .container {
     padding-left: 45px;
     padding-right: 45px;
@@ -2659,11 +2678,26 @@ footer p:last-of-type {
     height: 175px;
     width: 225px;
   }
+
+  .section-aboutCream--chafing {
+    padding-top: 80px;
+  }
+  .section-articleFirst__content p,
+  .section-articleFirst__content ul {
+    font-size: 20px;
+  }
+  .articleFirst__text {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .articleFirst__photo {
+    left: -115px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
   h2 {
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .header__wrapper {
@@ -3114,6 +3148,34 @@ footer p:last-of-type {
   .chafing__content-text p:nth-child(3) {
     font-size: 20px;
   }
+
+  .section-articleFirst__content-wrapper {
+    width: 100%;
+  }
+  .section-articleFirst__content p,
+  .section-articleFirst__content ul {
+    font-size: 18px;
+  }
+  .articleFirst__text-with-photo {
+    gap: 25px;
+    justify-content: space-between;
+  }
+  .articleFirst__photo {
+    position: static;
+    transform: translateY(0);
+    height: auto;
+    flex-basis: calc(35% - 25px);
+  }
+  .articleFirst__text {
+    width: 100%;
+    flex-basis: calc(65% - 25px);
+  }
+  .section-articleFirst__content h3 strong {
+    font-size: 25px;
+  }
+  .section-articleFirst__content h3 {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -3386,6 +3448,13 @@ footer p:last-of-type {
   }
   .usefulPage__slider-button.swiper-button-prev {
     left: 5%;
+  }
+
+  .articleFirst__text-with-photo {
+    flex-direction: column;
+  }
+  .articleFirst__photo {
+    width: 50%;
   }
 }
 
@@ -3683,5 +3752,21 @@ footer p:last-of-type {
   .usefulPage__slider-card p,
   .usefulPage__slider-card a {
     font-size: 15px;
+  }
+
+  .section-articleFirst__content p,
+  .section-articleFirst__content ul {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .articleFirst__text-with-photo {
+    gap: 15px;
+  }
+  .section-articleFirst__content h3 strong {
+    font-size: 20px;
+  }
+  .section-articleFirst__content h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 }
