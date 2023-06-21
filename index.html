@@ -9,14 +9,20 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  >
   <title>РеКрем: запобігання попрілості та подразнення</title>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <div class="container">
       <div class="header__wrapper">
         <div class="logo">
-          <img src="./images/logo--color.svg" alt="ReCream">
+          <a href="./index.html">
+            <img src="./images/logo--color.svg" alt="ReCream">
+          </a>
           <p>
             <strong class="violet">
               Крем для запобігання попрілості та подразненню
@@ -43,7 +49,7 @@
             <li>
               <ul class="header__nav-sublist">
                 <li>
-                  <a href="">
+                  <a href="./files/ReCream_instruction.pdf" target="_blank">
                     <img src="./images/instruction-icon.svg" alt="Instruction">
                     Інструкція
                   </a>
@@ -91,7 +97,7 @@
             <li>
               <ul class="header-mobile__nav-sublist">
                 <li>
-                  <a href="">
+                  <a href="./files/ReCream_instruction.pdf" target="_blank">
                     <img src="./images/instruction-icon.svg" alt="Instruction">
                     Інструкція
                   </a>
@@ -116,32 +122,27 @@
       </div>
       <div class="container">
         <div class="greeting__content greeting__content--main">
-          <div class="greeting__content--main-links">
-            <a href="" class="toContent toContent--with-animation">
-              <svg width="44" height="22" viewBox="0 0 44 22" xmlns="http://www.w3.org/2000/svg">
-                <path d="M43.3491 0L21.7931 22L0.237122 0H43.3491Z"/>
-              </svg>
-            </a>
-            <a href="/" class="buy">
-              <img src="./images/cart-icon.svg" alt="Buy">
-              <strong class="violet">
-                Придбати
-              </strong>
-            </a>
+          <div data-aos="zoom-in" class="greeting__content--main__description">
+            <img src="./images/greeting-main-img.png" alt="ReCream">
           </div>
-          <div class="greeting__content--main__description">
-            <img src="./images/greeting--main-cream.png" alt="ReCream">
-            <img src="./images/greetin--main-cream-description.png" alt="ReCream: 4 в 1">
-          </div>
+          <a href="#about-reCream" class="toContent toContent--greeting">
+            <svg width="44" height="22" viewBox="0 0 44 22" xmlns="http://www.w3.org/2000/svg">
+              <path d="M43.3491 0L21.7931 22L0.237122 0H43.3491Z"/>
+            </svg>
+          </a>
         </div>
       </div>
+      <a href="#buy-reCream" class="buy buy--white-main">
+        <img src="./images/cart-icon.svg" alt="Cart">
+        <strong class="violet">Придбати</strong>
+      </a>
     </section>
-    <section class="section section-about--main">
+    <section id="about-reCream" class="section section-about--main">
       <div class="container">
         <div class="about__content">
           <div class="about__content-overlay"></div>
-          <img src="./images/about--main-photo.png" alt="ReCream">
-          <div class="about__content-text">
+          <img data-aos="fade-down-right" src="./images/about--main-photo.png" alt="ReCream">
+          <div data-aos="fade-up-left" class="about__content-text">
             <h2 class="about__title">
               Про
               <span>
@@ -168,7 +169,7 @@
               <a href="./chafingBaby.html">
                 Дізнатися більше
               </a>
-              <a href="">
+              <a href="./files/ReCream_instruction.pdf" target="_blank">
                 Інструкція
               </a>
             </div>
@@ -178,10 +179,10 @@
     </section>
     <section class="section section-applying--main">
       <div class="container">
-        <h2>
+        <h2 data-aos="fade-down">
           Показання <span class="blue">до застосування</span>
         </h2>
-        <p class="with--background">
+        <p data-aos="fade-down" class="with--background">
           <strong class="blue">
             РеКрем (ReCream) створений для зовнішнього щоденного застосування дорослим та дітям з перших днів життя
           </strong>
@@ -218,7 +219,7 @@
         </div>
         <div class="applying__tab-content active">
           <div class="applying__tab-cards">
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/baby-icon.svg" alt="">
               </div>
@@ -232,7 +233,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/girl-icon.svg" alt="">
               </div>
@@ -246,7 +247,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/boobs-icon.svg" alt="">
               </div>
@@ -263,7 +264,7 @@
         </div>
         <div class="applying__tab-content">
           <div class="applying__tab-cards">
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/baby-icon.svg" alt="">
               </div>
@@ -277,7 +278,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/girl-icon.svg" alt="">
               </div>
@@ -291,7 +292,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/boobs-icon.svg" alt="">
               </div>
@@ -308,7 +309,7 @@
         </div>
         <div class="applying__tab-content">
           <div class="applying__tab-cards">
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/baby-icon.svg" alt="">
               </div>
@@ -322,7 +323,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/girl-icon.svg" alt="">
               </div>
@@ -336,7 +337,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/boobs-icon.svg" alt="">
               </div>
@@ -353,7 +354,7 @@
         </div>
         <div class="applying__tab-content">
           <div class="applying__tab-cards">
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/baby-icon.svg" alt="">
               </div>
@@ -367,7 +368,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/girl-icon.svg" alt="">
               </div>
@@ -381,7 +382,7 @@
                 </p>
               </div>
             </div>
-            <div class="applying__tab-card">
+            <div data-aos="flip-down" class="applying__tab-card">
               <div class="applying__tab-card-decoration">
                 <img src="./images/boobs-icon.svg" alt="">
               </div>
@@ -400,16 +401,16 @@
     </section>
     <section class="section section-advatages--main">
       <div class="container">
-        <h2>
+        <h2 data-aos="fade-down">
           Переваги Ре<span class="blue">Крем</span>
         </h2>
-        <p class="with--background">
+        <p data-aos="fade-down" class="with--background">
           <strong class="blue">
             Компоненти РеКрем (ReCream) допомагають доглянути-зволожити-заспокоїти-захистити шкіру
           </strong>
         </p>
         <div class="advantages__content">
-          <div class="advantages__content-row advantages__content-row--1">
+          <div data-aos="zoom-in-right" class="advantages__content-row advantages__content-row--1">
             <div class="advantages__content-text">
               <p>
                 <strong class="violet">Пом’якшує</strong>
@@ -429,10 +430,10 @@
               </p>
             </div>
           </div>
-          <div class="advantages__content-row advantages__content-row--2">
+          <div data-aos="zoom-in" class="advantages__content-row advantages__content-row--2">
             <img src="./images/cream__tube.png" alt="ReCream">
           </div>
-          <div class="advantages__content-row advantages__content-row--3">
+          <div data-aos="zoom-in-left" class="advantages__content-row advantages__content-row--3">
             <div class="advantages__content-text">
               <p>
                 <strong class="blue">Захищає</strong>
@@ -458,10 +459,10 @@
     </section>
     <section class="section section-chafing--main">
       <div class="container">
-        <h2>
+        <h2 data-aos="fade-down">
           Про <strong class="blue">попрілість</strong>
         </h2>
-        <div class="chafing__text">
+        <div data-aos="fade-down" class="chafing__text">
           <p>
             <strong class="violet">Попрілість</strong> — це запалення на шкірі у дорослих та дітей, що виникає в
             результаті потрапляння вологи і тертя складок шкіри між собою, з одягом чи підгузком. Це
@@ -478,7 +479,7 @@
             (пелюшковий дерматит) — одна з найпоширенішених пробем у догляді за немовлятами
           </p>
         </div>
-        <div class="chafing__about">
+        <div data-aos="fade-down" class="chafing__about">
           <div class="chafing__about-title">
             <h3>
               <strong class="blue">
@@ -499,13 +500,13 @@
     </section>
     <section class="section section-cream--main">
       <div class="container">
-        <h2>
+        <h2 data-aos="fade-down">
           Ре<strong class="blue">Крем</strong> (Re<strong class="blue">Cream</strong>)
           <br>
           Ваш найкращий спосіб зберегти своє здоров’я та молодість
         </h2>
         <div class="cream__content">
-          <div class="cream__content-row">
+          <div data-aos="fade-right" class="cream__content-row">
             <img src="./images/cream-decorator-arrow.png">
             <div class="cream__content-text">
               <p>
@@ -553,7 +554,7 @@
             </div>
             <img src="./images/cream-decorator-arrow.png">
           </div>
-          <div class="cream__content-row">
+          <div data-aos="fade-left" class="cream__content-row">
             <div class="cream__content-text">
               <h3>
                 <strong class="blue">
@@ -624,11 +625,11 @@
     </section>
     <section class="section section--useful--main">
       <div class="container container--useful--main">
-        <h2>
+        <h2 data-aos="fade-up">
           Корисна <strong class="blue">інформація</strong>
         </h2>
         <div class="useful__content">
-          <div class="swiper useful__content-slider">
+          <div data-aos="fade-up" class="swiper useful__content-slider">
             <div class="swiper-wrapper useful__content-slider-wrapper">
               <div class="swiper-slide useful__content-slider-item">
                 <div class="useful__content-slider-card">
@@ -784,44 +785,50 @@
         </div>
       </div>
     </section>
-    <section class="section section--buy">
+    <section id="buy-reCream" class="section section--buy">
       <div class="container">
-        <h2>
+        <h2 data-aos="fade-up">
           Зручно замовити Ре<strong class="blue">Крем online</strong>
         </h2>
         <div class="buy__cards">
-          <div class="buy__card">
+          <div data-aos="flip-down" data-aos-delay="500" class="buy__card">
             <img src="./images/tabletki__logo.png" alt="Tabletki">
             <p>
               <strong class="violet">
                 Забронювати зі знижкою в найближчій аптеці
               </strong>
             </p>
-            <a href="">
+            <a href="https://tabletki.ua/uk/ReCream/1016187/" target="_blank">
               <img src="./images/cart-icon--white.svg" alt="Забронювати">
               <strong>Забронювати</strong>
             </a>
           </div>
-          <div class="buy__card">
+          <div data-aos="flip-down" data-aos-delay="500" class="buy__card">
             <img src="./images/parfum__logo.png" alt="Parfum">
             <p>
               <strong class="violet">
                 Замовити в інтернет-магазині косметики з безкоштовною доставкою
               </strong>
             </p>
-            <a href="">
+            <a 
+              href="https://parfums.ua/product/krem-pod-podguzniki-ot-oprelostej-detskij-recream?utm_source=recream&utm_medium=where_to_buy&utm_campaign=recream_site"
+              target="_blank"
+            >
               <img src="./images/cart-icon--white.svg" alt="Придбати онлайн">
               <strong>Придбати онлайн</strong>
             </a>
           </div>
-          <div class="buy__card">
+          <div data-aos="flip-down" data-aos-delay="500" class="buy__card">
             <img src="./images/liki__logo.png" alt="Liki24">
             <p>
               <strong class="violet">
                 Замовити в найближчій аптеці з доставкою додому 
               </strong>
             </p>
-            <a href="">
+            <a
+              href="https://liki24.com/uk/p/rekrem-recream-krem-dlya-predotvrasheniya-oprelosti-krem-tuba-75-g/"
+              target="_blank"
+            >
               <img src="./images/cart-icon--white.svg" alt="Замовити з доставкою">
               <strong>Замовити з доставкою</strong>
             </a>
@@ -831,7 +838,7 @@
     </section>
     <section class="section section--conect">
       <div class="container">
-        <div class="conect__wrapper">
+        <div data-aos="zoom-in" class="conect__wrapper">
           <div class="conect__background">
             <img src="./images/background-conect.png">
             <div class="connect__content">
@@ -874,46 +881,51 @@
   </main>
   <footer>
     <div class="container">
-      <p>
-        Реклама косметичного засобу. РеКрем (ReCream) крем для запобігання попрілості. Висновок
-        ДСЕЕ № 12.2-18-3 14477 від 02.07.2019 р. Перед застосуванням бажано проконсультуватися з лікарем та
-        ознайомитися з інструкцією. Важливо: перед застосуванням перевірити на алергічну реакцію. У разі
-        виникнення алергічної реакції, звернутися до лікаря. Для зовнішнього застосування.
-        Не є лікарським засобом. Виробник: Beka Ilaç Ve Kimya San. Tic. Ltd. Şti. (ТОВ «Бека Ілач Ве Кім'я Сан.
-        Тідж. Лтд. Шті.»), Туреччина. Імпортер: ТОВ «БІОКОДЕКС Україна» - компанія французької групи Biocodex,
-        04073, м. Київ, пр. Степана Бандери, 28-А. Тел.: +38 044 237 77 84. Повідомлення щодо скарг на якість та
-        небажані явища надсилати компанії-імпортеру на е-mail: quality@biocodex.ua або за телефоном. Тарифікація
-        дзвінків згідно з тарифами Вашого оператора. Цей веб-сайт призначений для української аудиторії та
-        підпорядковується правовим нормам, що діють в Україні.
-      </p>
-      <p>
-        Цей веб-сайт призначений для української аудиторії та підпорядковується правовим нормам, що діють в Україні.
-      </p>
-      <p>
-        Всі права захищені РеКрем 2023
-      </p>
-      <div class="footer__logos">
-        <div class="logo logo--white">
-          <img src="./images/logo--white.svg" alt="ReCream">
-          <p>
-              Крем для запобігання попрілості та подразненню
-          </p>
-        </div>
-        <div class="links">
-          <a href="https://www.facebook.com/RecreamUA/" target="_blank">
-            <img src="./images/facebook-logo.svg" alt="Facebook">
-          </a>
-          <a href="https://www.instagram.com/recream_ua/?hl=uk" target="_blank">
-            <img src="./images/instagram-logo.svg" alt="Instagram">
-          </a>
-        </div>
-        <div class="biodex">
-          <img src="./images/biodex-logo.svg" alt="Biodex">
+      <div data-aos="zoom-in" class="footer__wrappper">
+        <p>
+          Реклама косметичного засобу. РеКрем (ReCream) крем для запобігання попрілості. Висновок
+          ДСЕЕ № 12.2-18-3 14477 від 02.07.2019 р. Перед застосуванням бажано проконсультуватися з лікарем та
+          ознайомитися з інструкцією. Важливо: перед застосуванням перевірити на алергічну реакцію. У разі
+          виникнення алергічної реакції, звернутися до лікаря. Для зовнішнього застосування.
+          Не є лікарським засобом. Виробник: Beka Ilaç Ve Kimya San. Tic. Ltd. Şti. (ТОВ «Бека Ілач Ве Кім'я Сан.
+          Тідж. Лтд. Шті.»), Туреччина. Імпортер: ТОВ «БІОКОДЕКС Україна» - компанія французької групи Biocodex,
+          04073, м. Київ, пр. Степана Бандери, 28-А. Тел.: +38 044 237 77 84. Повідомлення щодо скарг на якість та
+          небажані явища надсилати компанії-імпортеру на е-mail: quality@biocodex.ua або за телефоном. Тарифікація
+          дзвінків згідно з тарифами Вашого оператора. Цей веб-сайт призначений для української аудиторії та
+          підпорядковується правовим нормам, що діють в Україні.
+        </p>
+        <p>
+          Цей веб-сайт призначений для української аудиторії та підпорядковується правовим нормам, що діють в Україні.
+        </p>
+        <p>
+          Всі права захищені РеКрем 2023
+        </p>
+        <div class="footer__logos">
+          <div class="logo logo--white">
+            <a href="./index.html">
+              <img src="./images/logo--white.svg" alt="ReCream">
+            </a>
+            <p>
+                Крем для запобігання попрілості та подразненню
+            </p>
+          </div>
+          <div class="links">
+            <a href="https://www.facebook.com/RecreamUA/" target="_blank">
+              <img src="./images/facebook-logo.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/recream_ua/?hl=uk" target="_blank">
+              <img src="./images/instagram-logo.svg" alt="Instagram">
+            </a>
+          </div>
+          <div class="biodex">
+            <img src="./images/biodex-logo.svg" alt="Biodex">
+          </div>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
 </body>

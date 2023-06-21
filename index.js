@@ -31,6 +31,10 @@ new Swiper('.usefulPage__slider', {
     nextEl: '.usefulPage__slider-button.swiper-button-next',
     prevEl: '.usefulPage__slider-button.swiper-button-prev',
   },
+  pagination: {
+    el: '.usefulPage__slider-pagination',
+    clickable: true
+  },
   spaceBetween: 0,
   breakpoints: {
     1400: {
@@ -44,6 +48,9 @@ new Swiper('.usefulPage__slider', {
     },
   }
 })
+AOS.init({
+  duration: 1000,
+});
 
 const burgerBtn = document.querySelector('.burger-button');
 const mobileMenu = document.querySelector('.header-mobile-nav');
