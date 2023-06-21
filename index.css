@@ -1902,6 +1902,9 @@ footer p:last-of-type {
   width: 80%;
   margin: 0 auto;
 }
+.section-articleFirst__content h2 {
+  text-align: left;
+}
 .section-articleFirst__content p {
   font-size: 25px;
   font-weight: 600;
@@ -1959,7 +1962,21 @@ footer p:last-of-type {
 .section-articleFirst__content p a:hover {
   color: var(--color-accent-violet);
 }
-/*#region articleFirst*/
+/*#endregion articleFirst*/
+
+/*#region articleSecond*/
+.section-articleSecond__content-wrapper p a {
+  display: inline-block;
+  color: var(--color-accent-blue);
+  transition: all 0.4s;
+}
+.section-articleSecond__content-wrapper p a:hover {
+  color: var(--color-accent-violet);
+}
+.articleSecond__content-photo {
+  margin-bottom: 35px;
+}
+/*#endregion articleSecond*/
 
 
 @media screen and (min-width: 1921px) {
