@@ -1984,8 +1984,7 @@ footer p:last-of-type {
 }
 .buy--blue {
   width: max-content;
-  top: 50%;
-  bottom: 50%;
+  top: 60%;
 }
 .buy--blue::after {
   content: '';
