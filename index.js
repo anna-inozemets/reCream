@@ -76,7 +76,7 @@ function showTabContent(tabIndex) {
   tabItems[tabIndex].classList.add("active");
 }
 
-const openModal = document.querySelector('.open-modal');
+const opensModal = document.querySelectorAll('.open-modal');
 const closeModal = document.querySelector('.close-modal');
 const modalContent = document.querySelector('.modal');
 
@@ -85,10 +85,12 @@ function toggleActiveModal() {
   document.body.classList.toggle('no-scroll');
   document.documentElement.classList.toggle('no-scroll')
 }
-
-openModal.addEventListener('click', function() {
-  toggleActiveModal();
+opensModal.forEach(openModal => {
+  openModal.addEventListener('click', function() {
+    toggleActiveModal();
+  })
 })
+
 closeModal.addEventListener('click', function() {
   toggleActiveModal()
 })

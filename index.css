@@ -144,7 +144,7 @@ header {
   right: 0;
   left: 0;
   z-index: 11;
-  background: linear-gradient(180deg, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9) 50%, rgba(255,255,255, 0.1) 100%);
 }
 
 .header-mobile {
@@ -156,7 +156,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .logo {
@@ -164,7 +164,7 @@ header {
 }
 .logo img {
   margin: 0 auto 5px;
-  max-width: 345px;
+  max-width: 300px;
   width: 95%;
 }
 .logo p {
@@ -217,6 +217,10 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+}
+
+.header__nav-sublist li {
+  cursor: pointer;
 }
 
 .header__nav-sublist li a {
@@ -1046,7 +1050,7 @@ footer p:last-of-type {
   top: 50%;
   transform: translateY(-50%);
   max-height: 95vh;
-  width: 95%;
+  width: 90%;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -1902,6 +1906,10 @@ footer p:last-of-type {
 /*#endregion articleSecond*/
 
 /*#region additionalLinks*/
+.container--greeting {
+  position: relative;
+}
+
 .toContent {
   display: flex;
   align-items: center;
@@ -1924,8 +1932,8 @@ footer p:last-of-type {
 
 .toContent--greeting {
   position: absolute;
-  bottom: 45px;
-  left: 45px;
+  bottom: 65px;
+  left: 200px;
   width: 80px;
   height: 80px;
   animation: scrollToContent 2s ease-out infinite;
@@ -2125,6 +2133,11 @@ footer p:last-of-type {
   }
   .section-slider--usefulPage {
     margin-top: 230px;
+  }
+
+  .toContent--greeting {
+    bottom: 30px;
+    left: 110px;
   }
 }
 
@@ -2462,6 +2475,9 @@ footer p:last-of-type {
   .toContent svg {
     width: 65%;
   }
+  .toContent--greeting {
+    left: 60px;
+  }
 
   .section-aboutCream--chafing::before {
     border-top: 90px solid transparent;
@@ -2738,6 +2754,20 @@ footer p:last-of-type {
   .section-aboutCream--chafing::before {
     display: none;
   }
+
+  .modal__content form input {
+    margin-bottom: 25px;
+  }
+  .modal__content form textarea {
+    margin-bottom: 45px;
+  }
+  .modal__content form button {
+    max-width: 250px;
+    padding: 10px 30px;
+  }
+  .modal__content form input, .modal__content form textarea {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -2768,18 +2798,18 @@ footer p:last-of-type {
 
   .burger-button {
     position: relative;
-    height: 30px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     z-index: 2;
   }
   .burger-button__background {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(50%);
+    transform: translateY(-54%) translateX(50%);
     right: 50%;
     z-index: -1;
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: var(--color-accent-blue);
   }
@@ -2800,15 +2830,15 @@ footer p:last-of-type {
   }
   .burger-button::after {
     position: absolute;
-    top: calc(100% - 3px);
+    top: calc(100% - 13px);
   }
   .burger-button.active::before {
     box-shadow: transparent 0 0 0 0;
-    top: 50%;
+    top: 35%;
     transform: rotate(225deg);
   }
   .burger-button.active::after {
-    top: 50%;
+    top: 35%;
     transform: rotate(315deg);
   }
 
@@ -3207,7 +3237,30 @@ footer p:last-of-type {
   }
 
   .toContent--greeting {
-    left: 15px;
+    left: 35px;
+  }
+
+  .buy img {
+    margin-right: 0;
+    max-height: 30px;
+  }
+  .buy strong {
+    display: none;
+  }
+  .buy::after {
+    right: -18px;
+  }
+  .buy--white-main::after {
+    content: '';
+    border-top: 85px solid transparent;
+    border-right: 85px solid white;
+    border-bottom: 85px solid transparent;
+  }
+  .buy--blue::after {
+    content: '';
+    border-top: 85px solid transparent;
+    border-right: 85px solid var(--color-accent-blue);
+    border-bottom: 85px solid transparent;
   }
 }
 
@@ -3223,8 +3276,8 @@ footer p:last-of-type {
     font-size: 36px
   }
   .header-mobile {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
   .header-mobile .logo {
     max-width: 220px;
@@ -3234,18 +3287,7 @@ footer p:last-of-type {
   }
 
   .burger-button {
-    height: 25px;
-    width: 25px;
-  }
-  .burger-button__background {
-    width: 45px;
-    height: 45px;
-  }
-  .burger-button::before {
-    top: 5px;
-  }
-  .burger-button::after {
-    top: calc(100% - 13px);
+    right: 10px;
   }
 
   .greeting__content--main__description::before {
@@ -3491,14 +3533,11 @@ footer p:last-of-type {
   }
 
   .buy {
-    top: 50%;
+    bottom: 5%;
     right: 5px;
   }
   .buy img {
     max-height: 25px;
-  }
-  .buy strong {
-    display: none;
   }
   .buy::after {
     right: -6px;
