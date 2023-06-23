@@ -2475,7 +2475,8 @@ footer p:last-of-type {
     width: 65%;
   }
   .toContent--greeting {
-    left: 60px;
+    left: 65px;
+    bottom: 65px;
   }
 
   .section-aboutCream--chafing::before {
